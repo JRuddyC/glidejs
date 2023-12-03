@@ -7,7 +7,7 @@ import Glide from '@glidejs/glide';
 import styles from './styles.module.css';
 import img1 from '../assets/deathwing.jpg'
 import img2 from '../assets/ragnaros.webp'
-const carousel = ({ images }) => {
+const Carousel = ({ images }) => {
 
     // const images = [img1, img2]
     useEffect(() => {
@@ -41,14 +41,15 @@ const carousel = ({ images }) => {
     }, [])
     return (
         <div>
-            carousel
-
+                Este es un carousel hecho con glide js
+                Hola mundoooooo
+                Si les gusta este trabajo de copy/paste donenme :)
             <div className='glide  '>
                 <div className="glide__track" data-glide-el="track">
                     <ul className="glide__slides">
                         {images.map((image, index) => (
-                            <li key={index} className="glide__slide">
-                                <img className={styles.imagesCarousel} src={image} alt={`Slide ${index + 1}`} />
+                            <li key={index} className="glide__slide" style={{display:'flex', justifyContent:'center'}}>
+                                <img className={styles.imagesCarousel} src={image} alt={`Slide ${index + 1}`} loading='lazy'/>
                             </li>
                         ))}
                     </ul>
@@ -66,4 +67,4 @@ const carousel = ({ images }) => {
     )
 }
 
-export default carousel
+export default Carousel

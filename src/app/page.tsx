@@ -6,8 +6,8 @@ import i2 from '@/assets/deathwing.jpg'
 import i3 from '@/assets/lk.jpg'
 
 const page = () => {
-  const images = [i1.src, i2.src, i3.src,i1.src, i2.src, i3.src]
-  
+  const images = [i1.src, i2.src, i3.src, i1.src, i2.src, i3.src]
+
   return (
     <div>
       page

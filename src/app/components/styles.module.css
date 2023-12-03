@@ -1,0 +1,13 @@
+.imagesCarousel {
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+    objectFit: cover
+}
+
+.imagesCarousel:hover {
+    width: 255px;
+    height: 305px;
+    border: solid 5px rgb(99, 35, 35);
+    transition: all 0.3s;
+}
